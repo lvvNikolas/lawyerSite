@@ -1,0 +1,47 @@
+.more {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+
+}
+.more__back-btn {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #675CE9;
+    color: white;
+    margin-bottom: 48px;
+}
+.more__title {
+    margin-bottom: 48px;
+   
+}
+.more__sub-title {
+    color: #5A5A5A;
+    font-size: 20px;
+    margin-bottom: 64px;
+}
+.more__content {
+    padding: 30px;
+    border: 2px solid #D3CECE;
+    border-radius: 20px;
+}
+.more__description {
+    color: #5A5A5A;
+
+}
+
+.more__button  {
+    display: block;
+    margin: 0 auto;
+    margin-top: 48px;
+    width: 260px;
+    height: 80px; 
+    color: #fff;
+    border: none;
+    transition: transform 0.4s;
+}

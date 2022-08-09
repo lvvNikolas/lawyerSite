@@ -1,0 +1,25 @@
+.banner{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    background: black;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.bannerVisState, .bannerLabelState{
+    display: none;
+}
+.banner__content {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 15px;
+  
+}
+.banner__slogan{
+    font-size: 1.2rem;
+}

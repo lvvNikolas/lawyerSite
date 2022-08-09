@@ -1,0 +1,193 @@
+.direction{
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    padding: 120px 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    position: relative; 
+}
+.direction__slogan{
+    font-weight: 700;
+    // padding-bottom: 24px;
+    color: #2e3450;
+}
+.direction__text{
+    color: #5A5A5A;
+    margin-bottom: 64px;
+}
+.direction__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.direction__card {
+    width: calc(50% - 16px);
+    min-height: 350px;
+    margin-bottom: 32px;
+    padding: 40px;
+    background: #F1F6FB;
+    // border: 2px solid #D3CECE;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    transition: transform ease-in 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+.direction__card a{
+    text-decoration: none;
+    color: #2e3450;
+    align-self: stretch;
+    transition: transform 0.3s, background-color 0.3s;
+    background: none;
+    padding: 10px 30px;
+    transform: translateX(-30px) scale(1);
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    // font-weight: 600;
+}
+.direction__card a:hover{
+   transform: scale(0.9) translateX(0);
+   background:  #675CE9;
+   color: white;
+}
+.direction__card a:active{
+    transform: scale(0.9) translateX(0);
+    filter: brightness(0.5);
+    color: white;
+ }
+.direction__card__body{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.direction__card:hover {
+    transform: scale(0.97);
+}
+.direction__card:last-of-type{
+    font-size: 2rem;
+    color: #D1D1D1;
+    background: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.direction__card-title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+.direction__card-title img{
+    width: 40px;
+    margin-right: 10px;
+}
+.direction__card p{
+    color: #5A5A5A;
+    width: 50%;
+}
+
+.direction__card__buttons{
+    display: flex;
+    margin-top: auto;
+    width: 100%;
+}
+
+.direction__button {
+    width: 260px;
+    height: 80px; 
+    color: #fff;
+    margin-left: auto;
+    border: none;
+    transition: transform 0.4s;
+}
+.direction__card-pic {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 30%;
+  
+}
+.direction__card-pic1{
+    background: radial-gradient(88.71% 88.71% at 92.53% 7.71%, #FEC5FF 0%, #FFEBB7 100%);
+}
+.direction__card-pic2{
+    background: radial-gradient(88.71% 88.71% at 92.53% 7.71%, #CCF6FF 0%, #FFD2D2 100%);
+}
+.direction__card-pic3{
+    background: radial-gradient(88.71% 88.71% at 92.53% 7.71%, #FFCCF7 0%, #D2DCFF 100%);
+}
+.direction__card-pic img{
+    position: absolute;
+    right: 15px;
+    top:0;
+}
+
+/*Meadia start here*/
+
+@media (max-width:1200px) {
+    .direction{
+        padding: 50px 10px;
+    }
+    .direction__card{
+        width: 100%;
+    }
+}
+
+@media (max-width:650px) {
+    .direction__card{
+        width: 100%;
+        min-height: 450px;
+        padding: 30px 20px;
+        height: fit-content;
+    }
+    .direction__slogan{
+        word-wrap: break-word;
+    }
+    .direction__card-pic {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+    }
+    .direction__card__body{
+        margin-top: 200px;
+    }
+    .direction__card-pic img{
+        height: 200%;
+        right: 0;
+        top:0;
+        transform: translateY(-10%);
+    }
+    .direction__button {
+        margin-top: 32px;
+        width: 100%;
+    }
+    .direction__card:last-of-type{
+        height: fit-content;
+        min-height: auto;
+    }
+    .direction__card__buttons{
+       flex-direction: column;
+    }
+    .direction__card a{
+        transform: scale(1) translateX(0);
+        padding-left: 0;
+        transition: 0s;
+    }
+    .direction__card a:hover{
+        transform: scale(1) translateX(0);
+        background:  none;
+        color: #2e3450;
+     }
+     .direction__card a:active{
+         transform: scale(1) translateX(0);
+         filter: brightness(1);
+         color: #2e3450;
+      }
+}

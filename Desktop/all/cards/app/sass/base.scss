@@ -1,0 +1,129 @@
+
+// /*========= Fonts========= */
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap');
+
+
+// *{
+// 	margin: 0;
+// 	padding: 0;
+// 	box-sizing: border-box;
+// 	-webkit-box-sizing: border-box;
+// 	-moz-box-sizing: border-box;
+// }
+
+// html{
+// 	font-size: 20px;
+// }
+// h1{
+// 	font-size: 3rem;
+// 	font-weight: 600;
+// }
+// h2{
+// 	font-size: 2.2rem;
+// 	font-weight: 600;
+// }
+// h3{
+// 	font-size: 1.5rem;
+// 	font-weight: 600;
+// }
+// h4{
+// 	font-size: 1.2rem;
+// 	font-weight: 700;
+// }
+// p{
+// 	font-size: 1rem;
+// }
+// :root{
+// 	--accent-color: #675CE9;
+// 	--titles-size: 3rem;
+// 	--titles-weight: 600;
+// 	--titles-padding-bottom: 30px;
+// 	--section-padding-vertical:70px
+// }
+// .header{
+// 	order: 1;
+// }
+// .direction{
+// 	order:2;
+// }
+// .features{
+// 	order: 3;
+// }
+// .moving-string{
+// 	order: 4;
+// }
+// .review{
+// 	order: 7;
+// }
+// .form{
+// 	order: 6;
+// }
+// .classes{
+// 	order: 7;
+// }
+// .benefit{
+// 	order: 5;
+// }
+// .student-works{
+// 	order: 8;
+// }
+// /*Костыль чтобы тайлт не прокручивался вместо с карточками студентов. Потом исправлю*/
+// .student-works__title-container{
+// 	order: 8;
+// }
+// .questions{
+// 	order: 9;
+// }
+// .footer{
+// 	order: 10;
+// }
+
+// @media (max-width:950px) {
+// 	html{
+// 		font-size: 18px;
+// 	}
+
+// }
+// @media (max-width:600px) {
+// 	h2{
+// 		font-size: 2rem;
+// 	}
+
+// }
+// body{
+// 	font-family: 'Montserrat', sans-serif;
+// 	color: #324150;
+// 	display: flex;
+// 	flex-direction: column;
+// }
+// .active-btn{
+// 	background: #3F4356;
+// 	border-radius: 100px;
+// }
+// .active__button--hovered{
+//     transform: scale(0.95);
+//     filter: brightness(120%);
+// }
+// .active-btn:active{
+//     transform: scale(0.95);
+//     // filter: hue-rotate(240deg);
+// }
+
+
+// .main__loader{
+// 	position: fixed;
+// 	width: 100%;
+// 	height: 100%;
+// 	background-color: white;
+// 	z-index: 1000;
+// 	top: 0;
+// 	left: 0;
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: center;
+// 	overflow: hidden;
+// }
+// .loader-svg{
+// 	width: 50px;
+// 	height: 50px;
+// }

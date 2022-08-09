@@ -1,0 +1,46 @@
+.first__feature{
+    padding: 50px ;
+    margin-top: 40px;
+    border: 1px solid salmon;
+}
+
+.first__feature--item{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.first__feature--items{
+    padding: 10px;
+
+   
+}
+.first__feature--icon{
+    font-size: 40px;
+    padding-bottom: 10px;
+    color: rgb(77,22,175);
+}
+
+.first__feature--slogan{
+    font-size: 22px;
+    color: rgb(77,22,175);
+    padding-bottom: 10px;
+}
+
+.first__feature--text{
+    text-transform: uppercase;
+    font-size: 18px;
+
+}
+
+
+
+
+/*Meadia start here*/
+@media(max-width: 700px){
+    .first__feature--item{
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

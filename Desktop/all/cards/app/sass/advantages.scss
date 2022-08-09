@@ -1,0 +1,96 @@
+.advantages {
+
+}
+.advantagesContainer {
+    max-width: 1550px;
+    // border-bottom: 1px solid black;
+    padding: var(--section-padding-vertical) 0;
+}
+
+.advantagesHeader {
+    text-align: center;
+    font-size: var(--titles-size);
+    font-weight: var(--titles-weight);
+    padding-bottom: var(--titles-padding-bottom);
+}
+.advantagesItems {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow:hidden;
+    cursor: default;
+    position: relative;
+    background: linear-gradient(to left, rgba(0,0,0,0) 0%,whitesmoke 6%,whitesmoke 94%,rgba(0,0,0,0) 100%);
+}
+.animation{
+    position: absolute;
+    height: 100%;
+    // background: linear-gradient(98.94deg, #459BE9 1.64%, #CC3C78 94.06%);
+    background: var(--accent-color);
+    z-index: 0;
+    left: 0;
+    top:0;
+    -webkit-transition: left .5s ease-out;
+    transition: left .5s ease-out;
+    border-radius: 3px 3px 0 0;
+}
+
+
+.advantagesItem{
+    position: relative;
+    padding: 30px 15px;
+    z-index: 10;
+    flex:15% 0 0;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    color: #202842;
+    
+}
+.advantagesText{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    min-height: 300px;
+    color: #202842;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.selectedText{
+    color: white;
+    transition: color .3s linear .1s;
+
+}
+
+
+
+@media(max-width:1350px){
+    .advantagesItem{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:950px){
+    .advantagesItems {
+        flex-direction: column;
+    }
+    .animation{
+        display: none;
+    }
+    .advantagesItem{
+        padding: 15px;
+    }
+    .selectedText{
+        color: white;
+        transition: color .3s linear .1s;
+        // background: linear-gradient(98.94deg, #459BE9 1.64%, #CC3C78 94.06%);
+        background: var(--accent-color);
+    }
+    .advantagesItems {
+        background: whitesmoke;
+    }
+}

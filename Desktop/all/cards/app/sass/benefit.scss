@@ -1,0 +1,119 @@
+.benefit{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background: #3F4356;
+    color: white;
+}
+.benefit__wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.benefit h2{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight:700;
+    line-height: 80%;
+    /* identical to box height, or 48px */
+    margin-bottom: 64px;
+}
+.benefit__list{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 3rem;
+    justify-content: space-between;
+}
+.benefit__list-item{
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(50% - 24px);
+    flex-grow: 1;
+}
+.benefit__list-item:nth-of-type(2n-1){
+    padding-right: 16px;
+}
+.benefit__list-item:nth-of-type(2n){
+    padding-left: 16px;
+}
+.benefit__img{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1rem;
+    
+}
+
+.benfit__img-item{
+    margin-right: 1rem;
+}
+
+
+.benefit__img h3{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    
+}
+
+.benefit__text{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*Meadia start here*/
+
+@media(max-width: 1200px){
+    .benefit{
+        padding: 50px 10px;
+    }
+}
+@media(max-width: 600px){
+    .benefit h2{
+    font-size: 2rem;
+    }
+
+    .benefit__list{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        // margin: 0 auto;
+    }
+    .benefit__list-item:nth-of-type(2n-1){
+        padding-right: 0;
+    }
+    .benefit__list-item:nth-of-type(2n){
+        padding-left: 0;
+    }
+    .benefit{
+        // max-width: 1200px;
+        // margin: 0 auto;
+        // padding-top: 80px;
+        padding-bottom: 20px;
+    
+    }
+    .benefit__list-item{
+        padding-bottom: 32px;
+    }
+}
+
+@media(max-width: 400px){
+
+        .benefit__img h3{
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            
+        }
+
+        .benefit__text{
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1rem;
+            padding-bottom: 32px;
+        
+        }
+        
+
+        
+}

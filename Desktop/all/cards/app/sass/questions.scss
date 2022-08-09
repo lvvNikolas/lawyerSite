@@ -1,0 +1,95 @@
+.questions{
+    // margin-top: 80px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 120px 0;
+}
+
+.questions__slogan{
+    color: #2e3450;
+    line-height:  1.55;
+    // margin-bottom: 32px;
+    text-align: left;
+   
+}
+.question__sub-slogan{
+    margin-bottom: 64px;
+    text-align: left;
+}
+
+.questions__wrapper{
+    // border: 1px solid black;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+
+/*Bootsrap styles change*/
+.accordion{
+    outline: none !important;
+}
+
+.accordion-item{
+    // margin-bottom: 32px;
+    border-radius: 30px !important;
+    border: none;
+    background: #F1F6FB;
+    margin-bottom: 30px;
+}
+.accordion-item .accordion-header{
+    background: none;
+}
+
+.accordion-body{
+    text-align: left;
+}
+.accordion-button{
+    // font-size: 2rem !important;
+    background: none;
+}
+
+.accordion-button:focus{
+    border-color: none;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed){
+    background:none;
+    outline: none;
+    color: #2e3450;
+    box-shadow: none;
+}
+
+button.accordion-button {
+    font-weight: 600;
+    line-height: 1.75;
+    color: #2e3450;
+    font-size: 24px;
+}
+
+/*THIS CHANG ARROW COLOR FROM BLUE TO VIOLET */
+
+.accordion-button:not(.collapsed)::after{
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23675CE9'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+
+/*Meadia start here*/
+
+@media(max-width: 1200px){
+   .questions{
+       padding: 50px 10px;
+   }
+
+}
+
+@media(max-width: 620px){
+    button.accordion-button {
+        line-height: 1;
+    }
+
+}

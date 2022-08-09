@@ -1,0 +1,30 @@
+.moving-string{
+    width: 100%;
+    height: 150px;
+    background: #8D46F6;
+    color: white;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.moving-string__scroller{
+    height: 100%;
+    width: 200%;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    animation: move 10s linear 0s infinite;
+    justify-content: space-around;
+}
+.moving-string h2{
+    font-size: 1.5rem;
+    white-space: nowrap;
+}
+@keyframes move {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
