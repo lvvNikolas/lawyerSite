@@ -1,0 +1,37 @@
+.price{
+    text-align: center;
+}
+.container{
+    max-width:1040px;
+    margin: 0 auto;
+}
+.price__slogan{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    color: #000000;
+     
+}
+
+.price__text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #696969;
+}
+
+.price__list{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.price__img{
+    max-width:70%;
+}

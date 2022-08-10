@@ -1,0 +1,93 @@
+.features {
+  padding-top: 50px;
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center
+}
+.features__slogan {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 77px;
+  text-align: center;
+  color: #000
+}
+.features__text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: #696969
+}
+.features__card {
+  display: flex;
+  justify-content: space-around
+}
+.features__img {
+  max-width: 130px;
+  max-height: 130px
+}
+.features__card-slogan {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #000
+}
+.features__h4 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #696969
+}
+.features__button {
+  text-decoration: none;
+  width: 320px;
+  height: 77px;
+  background: #fbfbfb;
+  border: 1px solid #dfdfdf;
+  border-radius: 25px;
+  padding: 15px;
+  color: #000
+}
+.price {
+  text-align: center
+}
+.container {
+  max-width: 1040px;
+  margin: 0 auto
+}
+.price__slogan {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 77px;
+  text-align: center;
+  color: #000
+}
+.price__text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: #696969
+}
+.price__list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px
+}
+.price__img {
+  max-width: 70%
+}
