@@ -1,3 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+.main__header {
+  max-width: 1440px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative
+}
+.header__logo {
+  text-align: left;
+  margin-top: 10px
+}
+.header__line {
+  position: absolute;
+  right: 0;
+  width: 1440px;
+  height: 1px;
+  top: 65px;
+  background: rgba(0,0,0,.46)
+}
+.heeader__slogan {
+  margin-top: 100px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 77px;
+  text-align: center;
+  color: #000
+}
+.header__text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: #696969
+}
+.header__button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px
+}
+.header__button:first-child {
+  margin-right: 46px
+}
+.header__button {
+  margin-top: 100px
+}
+.header__link {
+  color: #000;
+  width: 280px;
+  height: 47px;
+  background: #fbfbfb;
+  border: 1px solid #dfdfdf;
+  border-radius: 25px;
+  cursor: pointer
+}
+.header__card-list {
+  display: flex;
+  justify-content: space-around
+}
+.header__img {
+  width: 80%
+}
 .features {
   padding-top: 50px;
   max-width: 1440px;
@@ -11,7 +80,8 @@
   font-size: 64px;
   line-height: 77px;
   text-align: center;
-  color: #000
+  color: #000;
+  margin-bottom: 50px
 }
 .features__text {
   font-family: Inter;
@@ -20,11 +90,13 @@
   font-size: 32px;
   line-height: 39px;
   text-align: center;
-  color: #696969
+  color: #696969;
+  padding-bottom: 50px
 }
 .features__card {
   display: flex;
-  justify-content: space-around
+  justify-content: space-around;
+  margin-bottom: 50px
 }
 .features__img {
   max-width: 130px;
@@ -49,17 +121,24 @@
   color: #696969
 }
 .features__button {
-  text-decoration: none;
-  width: 320px;
-  height: 77px;
+  margin-top: 50px;
+  color: #000;
+  width: 280px;
+  height: 47px;
   background: #fbfbfb;
   border: 1px solid #dfdfdf;
   border-radius: 25px;
-  padding: 15px;
-  color: #000
+  cursor: pointer;
+  font-size: 16px
+}
+@media (max-width:900px) {
+  .features__card {
+    flex-direction: column
+  }
 }
 .price {
-  text-align: center
+  text-align: center;
+  margin-top: 100px
 }
 .container {
   max-width: 1040px;
@@ -72,7 +151,8 @@
   font-size: 64px;
   line-height: 77px;
   text-align: center;
-  color: #000
+  color: #000;
+  margin-bottom: 50px
 }
 .price__text {
   font-family: Inter;
@@ -81,13 +161,320 @@
   font-size: 32px;
   line-height: 39px;
   text-align: center;
-  color: #696969
+  color: #696969;
+  margin-bottom: 50px
 }
 .price__list {
   display: flex;
   justify-content: space-around;
   margin-bottom: 50px
 }
+.price__list-item {
+  margin-bottom: 30px
+}
 .price__img {
-  max-width: 70%
+  width: 433px;
+  height: 278px
+}
+.price__item--text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #696969
+}
+@media (max-width:900px) {
+  .price__list {
+    flex-direction: column
+  }
+}
+@media (max-width:900px) {
+  .price__img {
+    width: 70%;
+    height: 80%
+  }
+}
+.subscription {
+  text-align: center;
+  margin-top: 100px
+}
+.subscription__slogan {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 77px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 50px
+}
+.subscription__text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: #696969;
+  margin-bottom: 50px
+}
+.subscription__list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column
+}
+.subscription__list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center
+}
+.subscription__img {
+  width: 328px;
+  height: 200px;
+  background: #f5f5f5;
+  border-radius: 20px;
+  margin: 20px
+}
+@media (max-width:1130px) {
+  .subscription__list-item {
+    flex-direction: column
+  }
+}
+.note {
+  text-align: center;
+  margin-top: 100px
+}
+.note__slogan {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 77px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 50px
+}
+.note__text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: #696969;
+  margin-bottom: 50px
+}
+.note__list {
+  display: flex;
+  justify-content: space-between
+}
+.note__item:first-child {
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 10px
+}
+.note__item ul li {
+  list-style-type: none;
+  text-align: center;
+  color: #696969;
+  margin-top: 100px;
+  z-index: 300;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: #696969
+}
+@media (max-width:1400px) {
+  .note__img {
+    display: none
+  }
+}
+.question {
+  text-align: center;
+  margin-top: 100px
+}
+.question__slogan {
+  margin-bottom: 50px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 77px;
+  text-align: center;
+  color: #000
+}
+.accordion__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.accordion {
+  max-width: 800px
+}
+.accordion .contentBx {
+  position: relative;
+  margin: 20px 20px
+}
+.accordion .contentBx .label {
+  position: relative;
+  padding: 10px;
+  background-color: #f5f5f5;
+  color: #000;
+  cursor: pointer
+}
+.label {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 39px;
+  text-align: center;
+  color: #000
+}
+.note__text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 39px;
+  text-align: center;
+  color: #696969
+}
+.accordion .contentBx .label::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5em
+}
+.accordion .contentBx.active .label::before {
+  content: " -"
+}
+.accordion .contentBx .content {
+  position: relative;
+  background: #fff;
+  height: 0;
+  overflow: hidden;
+  transition: .5s;
+  overflow-y: auto
+}
+.accordion .contentBx.active .content {
+  height: 150px;
+  padding: 10px
+}
+.form {
+  text-align: center;
+  margin-top: 100px
+}
+.form__slogan {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 77px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 50px
+}
+.form__text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: #696969;
+  margin-bottom: 50px
+}
+.form__list {
+  display: flex;
+  justify-content: space-center
+}
+.form__img {
+  width: 70%
+}
+.main__form {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column
+}
+form input {
+  margin: 16px
+}
+.form__input {
+  text-align: center;
+  width: 587px;
+  height: 67px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  font-size: 20px;
+  margin-top: 10px
+}
+.form__button {
+  width: 320px;
+  height: 77px;
+  background: #060606;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 10px
+}
+.form__b {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 19px;
+  text-align: center;
+  color: #696969;
+  margin-top: 10px
+}
+.footer {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 250px
+}
+.footer__slogan {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: #696969
+}
+.footer__list {
+  display: flex;
+  justify-content: space-around
+}
+.footer__item {
+  display: flex;
+  flex-direction: column
+}
+.footer__link {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 39px;
+  text-align: center;
+  color: #000;
+  text-decoration: none
+}
+.footer__text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 39px;
+  text-align: center;
+  color: #696969
 }

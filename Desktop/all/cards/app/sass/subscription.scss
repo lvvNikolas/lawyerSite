@@ -1,0 +1,51 @@
+.subscription{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.subscription__slogan{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 50px;
+}
+.subscription__text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #696969;
+    margin-bottom: 50px;
+
+    }
+
+    .subscription__list{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .subscription__list-item{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .subscription__img{
+        width: 328px;
+        height: 200px;
+        background: #F5F5F5;
+        border-radius: 20px;
+        margin: 20px;
+    }
+
+    @media (max-width: 1130px) {
+        .subscription__list-item{
+            flex-direction: column;
+        }
+    }

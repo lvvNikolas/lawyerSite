@@ -1,0 +1,92 @@
+.form{
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+.form__slogan{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+.form__text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #696969;
+    margin-bottom: 50px;
+}
+
+
+
+.form__list{
+    display: flex;
+    justify-content: space-center;
+    
+    
+}
+
+.form__item:first-child{
+    // background-image: url(/images/dest/formImg.svg);
+}
+
+.form__img{
+    width: 70%;
+
+}
+
+.main__form{
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+form input{
+    margin: 16px;
+}
+.form__input{
+    text-align: center;
+    width: 587px;
+    height: 67px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.form__button{
+    width: 320px;
+    height: 77px;
+    background: #060606;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form__b{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+    text-align: center;
+    color: #696969;
+    margin-top: 10px;
+}
+
+.main__form{
+    // margin-right: 100px;
+}

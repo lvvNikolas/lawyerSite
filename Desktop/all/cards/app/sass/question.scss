@@ -1,0 +1,92 @@
+.question{
+    text-align: center;
+    margin-top: 100px;
+}
+.question__slogan{
+    margin-bottom: 50px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    color: #000000;
+
+}
+
+.accordion__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion{
+    // background-color: #F5F5F5;
+    max-width:800px;
+}
+
+.accordion .contentBx
+{
+    position: relative;
+    margin: 20px 20px;
+}
+
+.accordion .contentBx .label{
+    position: relative;
+    padding:10px;
+    background-color: #F5F5F5;
+    color: #000;
+    cursor: pointer;
+}
+
+
+
+.label{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 39px;
+    text-align: center;
+    color: #000000; 
+}
+
+ .note__text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 39px;
+    text-align: center;
+    color: #696969;
+
+}
+
+.accordion .contentBx .label::before{
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.accordion .contentBx.active .label::before{
+    content: " -";
+}
+
+.accordion .contentBx .content{
+    position: relative;
+    background: #fff;
+    height:0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+
+}
+
+
+.accordion .contentBx.active .content{
+    height:150px;
+    padding: 10px;
+}
