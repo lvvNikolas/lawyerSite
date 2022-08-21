@@ -1,0 +1,64 @@
+.merchant{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 15px;
+    display: flex;
+    flex-direction: column;
+}
+.merchant__slogan{
+    margin-top: 100px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 65px;
+}
+
+.merchant__text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #696969;
+}
+.merchant__back{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    max-width: 320px;
+    height: 80px;
+    background: #FBFBFB;
+    border: 1px solid #DFDFDF;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+   
+}
+.merchant__back img{
+    transform: rotateZ(180deg);
+    margin-right: 10px;
+}
+
+@media (max-width:700px) {
+    .merchant__slogan{
+        font-size: 40px;
+        line-height: 55px;
+    }
+    .merchant__text{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .merchant__back{
+        width: 150px;
+    }
+}

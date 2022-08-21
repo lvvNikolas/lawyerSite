@@ -1,14 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/app.min.css" type="text/css">
-</head>
-<body>
-    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cards</title>
+    <link rel="stylesheet" href="css/app.min.css">
+  </head>
+  <body>
+    <header class="main__header">
+      <div class="header__logo">
+        <img src="/images/dest/logo.png" alt="logo is here">
+        <span class="header__line"></span>
+      </div>
+
+      <h1 class="heeader__slogan">Предоплаченные виртуальные <br> карты</h1>
+      <p class="header__text">Сервис по выпуску предоплаченных виртуальных <br> карт visa, для оплаты покупок и подписок</p>
+      <div class="header__button-list">
+        <div class="header__button">
+          <button href="#" class="header__link" id="open">
+            <span>
+              Оставить Заявку
+            </span>
+            <img src="/images/dest/button-arrow.svg" alt="arrow">
+          </button>
+          
+        </div>
+        <div class="header__button">
+          <button href="#" class="header__link">
+            <span>
+              Связаться в телеграмм
+            </span>
+            <img src="/images/dest/button-arrow.svg" alt="arrow">
+          </button>
+        </div>
+      </div>
+
+      <div class="header__card-list-container">
+        
+        <div class="header__card-list">
+          <div class="header__card">
+            <img src="/images/dest/greenCard.svg" alt="card" class="header__img">
+          </div>
+          <div class="header__card">
+            <img src="/images/dest/OrangeCard.svg" alt="card" class="header__img">
+          </div>
+          <div class="header__card">
+            <img src="/images/dest/PinkCard.svg" alt="card" class="header__img">
+          </div>
+          <div class="header__card">
+            <img src="/images/dest/greenCard.svg" alt="card" class="header__img">
+          </div>
+          <div class="header__card">
+            <img src="/images/dest/OrangeCard.svg" alt="card" class="header__img">
+          </div>
+          <div class="header__card">
+            <img src="/images/dest/PinkCard.svg" alt="card" class="header__img">
+          </div>
+        </div>
+
+      </div>
+    </header> 
+    <main>
+      <!------------- Start Features section --------------->
+      <section class="features">
+        <h2 class="features__slogan">Предоплаченная Quark visa</h2>
+        <p class="features__text">
+          Предоплаченные виртуальные карты Quark - это карты с 
+          фиксированным номиналом. Карта выпускается единоразово и
+           не предусматривает пополнение. Данные карты можно использовать 
+           для оплаты в интернет магазинах, сервисах и у других поставщиков
+            услуг, которые принимают американские карты. Смс подтверждение
+             при покупке не требуется, так как у карты отсутствует 3ds защита
+        </p>
+        <div class="features__card">
+          <div class="features__card-item">
+            <img src="/images/dest/featureItemFirst.svg" alt="img is here" class="features__img">
+            <p class="features__card-slogan">Абсолютно легально</p>
+          </div>
+          <div class="features__card-item">
+            <img src="/images/dest/featureItemSecond.svg" alt="img is here" class="features__img">
+            <p class="features__card-slogan">Быстрый выпуск</p>
+          </div>
+          <div class="features__card-item">
+            <img src="/images/dest/featureItemThird.svg" alt="img is here" class="features__img">
+            <p class="features__card-slogan">Оплата зарубежныых <br> сервисов</p>
+          </div>
+          <div class="features__card-item">
+            <img src="/images/dest/featureItemFourth.svg" alt="img is here" class="features__img"> 
+            <p class="features__card-slogan">Оплата подписок <br> для бизнеса</p>
+          </div>
+        </div>
+        <h4 class="features__h4">Оплачемый вами сервис должен являться мерчантом США, 
+          для корректной <br>  работы карты</h4> 
+          <button href="#" class="features__button">
+            <span>
+              Узнать подробнее
+            </span>
+            <img src="/images/dest/button-arrow.svg" alt="arrow">
+          </button>
+      </section>
+      <!------------- Start Price section --------------->
+      <section class="price">
+        <div class="container">
+          <h2 class="price__slogan">
+            Разные номинал для разных <br> целей
+          </h2>
+          <p class="price__text">
+            Кроме базовых номиналов имется широкий диапазон вариантов,
+             для каждого. Вы можете подобрать любую удобную вам сумму в 
+             диапазоне от 25 до 500$ 
+          </p>
+          <div class="price__list">
+
+            <div>
+              <div class="price__list-item">
+                <img src="/images/dest/price50.svg" alt="img is here" class="price__img">
+                <p class="price__item--text">Карта номиналом 50$</p>
+              </div>
+              <div class="price__list-item">
+                <img src="/images/dest/price100.svg" alt="img is here" class="price__img">
+                <p class="price__item--text">Карта номиналом 100$</p>
+              </div>
+            </div>
+
+              <div>
+                <div class="price__list-item">
+                  <img src="/images/dest/price150.svg" alt="img is here" class="price__img">
+                  <p class="price__item--text">Карта номиналом 150$</p>
+                </div>
+                <div class="price__list-item">
+                  <img src="/images/dest/priceless.svg" alt="img is here" class="price__img">
+                  <p class="price__item--text">Карта произвольного номинала, <br> не менее 50$</p>
+                </div>
+              </div>
+
+          </div>
+
+        </div>
+      </section>
+          <!------------- Start Subscription section --------------->
+          <section class="subscription">
+            <div class="container">
+              <h2 class="subscription__slogan">
+                Оплата зарубежных сервисов и подписок
+              </h2>
+              <p class="subscription__text">Любимые сервисы и интернет
+                 магазины снова <br> оступны за рубли. Мы поможем с оплатой <br>
+                  сервисов Google, Apple, PlayStation, Microsoft, <br> Adobe
+                  , Zoom, Spotyfy, Netflix, Amazon, <br> Gitlab,Onlyfans, VPN
+                   сервисов, зарубежны  <br> хостингов и др.</p>
+            </div>
+
+            <div class="subscription__list">
+            
+                <div class="subscription__item">
+                  <img src="/images/dest/subApple.svg" alt="img is here" class="subscription__img">
+                </div>
+                <div class="subscription__item">
+                  <img src="/images/dest/subSony.svg" alt="img is here" class="subscription__img">
+                </div>
+                <div class="subscription__item">
+                  <img src="/images/dest/subYoutube.svg" alt="img is here" class="subscription__img">
+                </div>
+
+                <div class="subscription__item">
+                  <img src="/images/dest/subNetflix.svg" alt="img is here" class="subscription__img">
+                </div>
+                <div class="subscription__item">
+                  <img src="/images/dest/subGoogle.svg" alt="img is here" class="subscription__img">
+                </div>
+                <div class="subscription__item">
+                  <img src="/images/dest/subAdobe.svg" alt="img is here" class="subscription__img">
+                </div>
+
+            </div>
+          </section>
+                    <!------------- Start note section --------------->
+        <section class="note">
+          <div class="container">
+            <h2 class="note__slogan">Все предельно просто</h2>
+            <p class="note__text">Мы стремимся сделать процесс максимально простым
+               и понятным, для клиента. А так же помогаем на всех этапах оформления.</p>
+          </div>
+
+            <div class="note__list">
+              <div class="note__item">
+                <div class="note__decoration"></div>
+                <ul>
+                  <li>Оставляете заявку или пишите в телеграм</li>
+                  <li>Выбираете номинал</li>
+                  <li>После оформления получаете реквизиты карты</li>
+                  <li>Наслаждаетесь любимыми сервисами в полной мере</li>
+                </ul>
+              </div>
+              <div class="note__item">
+                <img src="/images/dest/noteSecond.png" alt="img is here" class="note__img">
+              </div>
+            </div>
+          
+        </section>
+             <!------------- Start question section --------------->
+        <section class="question">
+          <div class="container">
+            <h2 class="question__slogan">
+              Ответы на популярные вопросы
+            </h2>
+            <div class="accordion__wrapper">
+              <div class="accordion">
+                <div class="contentBx">
+                  <div class="label">Что такое предоплаченная карта ?</div>
+                  <div class="content">
+                    <p class="note__text">
+                      Это виртуальная карта, которая  позволяет вам оплачивать покупки и подписки
+                      в сервисах, различных зарубежных сервисах. Данную карту нельзя пополнять. 
+                      С нее нельзя снимать наличные. Она предназначенна для покупок в интернете.
+                      Вы можете привязывать наши карты к эпл или гугл пей и платить с помощью телефона.
+                      (данная возможность работает нестабильно). Сумму денег на карте выбираете вы.
+                    </p>
+                  </div>
+                </div>
+                <div class="contentBx">
+                  <div class="label">Это легально? Безопасно?</div>
+                  <div class="content">
+                    <p class="note__text">
+                     Все абсолютно легально. Вы получаете карту с номером и реквизитами. 
+                     Карта создается для вас, после оплаты и доступ к реквизитам имеете только вы.
+                     Данные карты не поддерживают 3ds технологию, привязка к номеру телефона - не требуется.
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="contentBx">
+                  <div class="label">Где я могу её использовать?</div>
+                  <div class="content">
+                    <p class="note__text">
+                      В магазинах и сервисах, являющихся американсими мерчантами 
+                      и у других компаний, которые принимают данные карты.
+                      Например данная карта подойдет для оплаты сервисов гугл, спотифай, эпл и т.д.
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="contentBx">
+                  <div class="label">Можно ли пополнять предоплаченную карту?</div>
+                  <div class="content">
+                    <p class="note__text">
+                      Нет. Пополнение и снятие недоступно.
+                    </p>
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+        
+          </div>
+        </section>
+
+         <!------------- Start form section --------------->
+
+         <section class="form">
+              <h2 class="form__slogan">Пишите нам если есть вопросы <br> или хотите заказать карту </h2>
+              <p class="form__text">Мы ответим вам в течении часа</p>
+            <div class="form__list">
+              <div class="form__item">
+                <img src="/images/dest/formImg.png" alt="Logo is here" class="form__img">
+              </div>
+              <div class="form__item">
+                <div class="main__form">
+                  <form id="form">
+                    <input type="text" id="fname" name="fname" placeholder="Имя" class="form__input"><br>
+                    <input type="phone" id="phone" name="fphone" placeholder="Телефон" class="form__input"><br>
+                    <input type="email" id="email" name="femail" placeholder="Почта" class="form__input"><br>
+                    <input type="text" id="dope" name="fdope" placeholder="Дополнительная информация" class="form__input"><br>
+                    <button type="submit" class="form__button">Отправить заявку</button>
+                  </form>
+                  <p class="form__b">
+                    Нажимая, вы даете согласие на обработку персональных данных
+                  </p>
+                </div>
+                <div class="form__decoration"></div>
+              </div>
+            </div>
+         </section> 
+         
+    </main>
+
+        <!------------- Start footer section --------------->
+        <footer class="footer">
+          <h2 class="footer__slogan">
+            Ваша карта уже ждет вас
+          </h2>
+          <div class="footer__img">
+            <img src="/images/dest/footerImg1.svg" alt="img is here">
+            <img src="/images/dest/footerImg2.svg" alt="img is here">
+          </div>
+          
+          <div class="footer__list">
+                <div class="footer__item">
+              <a href="#" class="footer__link">Главная</a>
+              <a href="#" class="footer__link">Поддержка пользователей</a>
+              <a href="#" class="footer__link">Политика конфиденциальности</a>
+            </div>
+
+            <div class="footer__item">
+              <p class="footer__text">+1(0071)651-24-142</p>
+              <p class="footer__text">Citrus st 18 Los Angeles California</p>
+              <p class="footer__text">2022 Tech company not Bank. All banking servises provide by metabank</p>
+            </div>
+          </div>
+          <div class="footer__logo">
+            <img src="/images/dest/footerLogo.svg" alt="logo is here">
+
+          </div>
+        </footer>
     <script src="scripts/app.min.js"></script>
-</body>
+  </body>
 </html>
