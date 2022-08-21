@@ -2,8 +2,21 @@ const accordion = document.getElementsByClassName('contentBx')
 for(i = 0; i <accordion.length; i++){
     accordion[i].addEventListener('click',function(){
         this.classList.toggle('active')
+        const height = this.querySelector(".note__text").offsetHeight
+        const content = this.querySelector(".content")
+        if(this.classList.contains('active')){
+            content.style.height = `${height + 10}px`
+            content.style.marginTop = '20px'
+        }else{
+            content.style.height = `0px`
+            content.style.marginTop = '0px'
+        }
     })
+   
 }
+
+const formHeight = document.querySelector('.main__form').offsetHeight
+document.querySelector('.form__item').style.height = `${formHeight + 60}px`
 
 
 //FORM SEND DATA

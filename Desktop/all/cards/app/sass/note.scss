@@ -1,8 +1,13 @@
 .note{
    text-align: center;
-   margin-top: 100px; 
+   margin-top: 150px; 
+   margin-bottom: 150px;
 }
-
+.note .container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
 .note__slogan{
     font-family: 'Inter';
     font-style: normal;
@@ -21,38 +26,49 @@
     line-height: 39px;
     text-align: center;
     color: #696969;
-    margin-bottom: 50px;
-
+    max-width: 1040px;
+    margin: 0 auto 50px auto;
 }
 
 .note__list{
     display: flex;
     justify-content: space-between;
+    min-height: 70vh;
 }
 
-.note__item:nth-child(2){
-    // flex-shrink: 1;
-    // flex-grow: 4;
-    // width: 1000px;
+.note__item:last-child{
+    width: 50%;
+   
 }
-
+.note__item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 .note__item:first-child{
     text-align: center;
-    margin-left: 40px;
-    margin-right: 10px;
+    display: flex;
+    flex-grow: 1;
 }
-
+.note__item:first-child ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 25px;
+}
+.note__decoration{
+    max-width: 200px;
+    width: 100%;
+    background: #9071FF;
+}
 
 .note__item ul li{
     list-style-type: none;
-    text-align: center;
-    color: #696969;
-    margin-top: 100px;
+
     z-index: 300;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 39px;
@@ -63,7 +79,36 @@
 
 
 @media (max-width: 1400px){
-    .note__img{
+    .note__list{
+        flex-direction: column-reverse;
+    }
+    .note__item:last-child{
+        width: 100%;
+        height: 300px;
+    }
+    .note__item:first-child{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .note__decoration{
         display: none;
+    }
+    .note__item:first-child ul{
+        flex-grow: 1;
+        height: fit-content;
+    }
+    .note__item:first-child li{
+        padding: 45px 0;
+    }
+}
+@media (max-width:700px) {
+    .note__slogan{
+        font-size: 40px;
+        line-height: 55px;
+        width: 100%;
+    }
+    .note__text, .note__item ul li{
+        font-size: 25px;
+        line-height: 30px;
     }
 }

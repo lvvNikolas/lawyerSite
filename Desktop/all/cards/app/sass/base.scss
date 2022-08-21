@@ -1,9 +1,29 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap');
 *{
 	 margin: 0;
 	 padding: 0;
 	 box-sizing: border-box;
 	// -webkit-box-sizing: border-box;
 	// -moz-box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+}
+
+@media (max-width:1440px) {
+	body{
+		padding: 0 15px;
+	}
+}
+
+@media (max-width:800px) {
+	// .heeader__slogan, 
+	// .features__slogan,
+	// .price__slogan,
+	// .note__slogan,
+	// .subscription__slogan,
+	// .question__slogan,
+	// .form__slogan {
+	// 	font-size: 40px !important;
+	// 	line-height: 55px !important;
+	// }
 }
 

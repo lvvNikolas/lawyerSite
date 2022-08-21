@@ -1,11 +1,9 @@
 .price{
     text-align: center;
-    margin-top: 100px;
-}
-.container{
     max-width:1040px;
-    margin: 0 auto;
+    margin: 100px auto;
 }
+
 .price__slogan{
     font-family: 'Inter';
     font-style: normal;
@@ -59,12 +57,20 @@
     .price__list{
         flex-direction: column;
     }
-    }
 
-    @media (max-width: 900px) {
-
-        .price__img{
-            width:70%;
-            height: 80%;
-        }
+    .price__img{
+        width:70%;
+        height: 80%;
     }
+}
+
+@media (max-width:700px) {
+    .price__slogan{
+        font-size: 40px;
+        line-height: 55px;
+    }
+    .price__text{
+        font-size: 25px;
+        line-height: 30px;
+    }
+}

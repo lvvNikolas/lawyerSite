@@ -1,5 +1,5 @@
 .features{
-    padding-top: 50px;
+    padding-top: 150px;
     max-width:1440px;
     // border: 1px solid black;
     margin: 0 auto;
@@ -13,7 +13,7 @@
     line-height: 77px;
     text-align: center;
     color: #000000;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 
 }
 
@@ -25,14 +25,14 @@
     line-height: 39px;
     text-align: center;
     color: #696969;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
 }
 
 .features__card{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-bottom: 50px;
-    
 }
 
 
@@ -61,23 +61,45 @@
     line-height: 30px;
     text-align: center;
     color: #696969;
+    margin-top: 100px;
+    margin-bottom: 100px;
 
 }
 
 .features__button{
-    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #000000;
-    width: 280px;
-    height: 47px;
+    width: 320px;
+    height: 80px;
     background: #FBFBFB;
     border: 1px solid #DFDFDF;
     border-radius: 25px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 auto;
 }
-
-@media (max-width: 900px) {
-    .features__card{
-        flex-direction: column;
+.features__button span{
+    margin-right: 5px;
+}
+@media (max-width: 1440px) {
+    .features__card-{
+        justify-content: center;
     }
+    .features__card-item{
+        width: 50%;
+        margin-bottom: 50px;
     }
+}
+@media (max-width:700px) {
+    .features__slogan{
+        font-size: 40px;
+        line-height: 55px;
+    }
+    .features__text{
+        font-size: 25px;
+        line-height: 30px;
+    }
+}

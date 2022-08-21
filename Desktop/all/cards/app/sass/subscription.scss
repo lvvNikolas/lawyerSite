@@ -1,8 +1,17 @@
 .subscription{
     text-align: center;
     margin-top: 100px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 150px auto 0 auto;
+    border-bottom: 1px solid #757575;
+    
 }
-
+.subscription .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .subscription__slogan{
     font-family: 'Inter';
     font-style: normal;
@@ -12,6 +21,8 @@
     text-align: center;
     color: #000000;
     margin-bottom: 50px;
+    width: 80%;
+    max-width: 1040px;
 }
 .subscription__text{
     font-family: 'Inter';
@@ -28,12 +39,12 @@
     .subscription__list{
         display: flex;
         justify-content: center;
-        flex-direction: column;
-    }
-    .subscription__list-item{
-        display: flex;
         flex-direction: row;
-        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 150px;
+    }
+    .subscription__item{
+   
     }
 
     .subscription__img{
@@ -45,7 +56,32 @@
     }
 
     @media (max-width: 1130px) {
-        .subscription__list-item{
-            flex-direction: column;
+        .subscription__list{
+            justify-content: center;
         }
     }
+    @media (max-width:770px) {
+        .subscription__list{
+            justify-content: space-between;
+        }
+        .subscription__item{
+            width: calc(50% - 10px)
+        }
+        .subscription__item img{
+            width: 100%;
+            object-fit: contain;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+    }
+@media (max-width:700px) {
+    .subscription__slogan{
+        font-size: 40px;
+        line-height: 55px;
+        width: 100%;
+    }
+    .subscription__text{
+        font-size: 25px;
+        line-height: 30px;
+    }
+}

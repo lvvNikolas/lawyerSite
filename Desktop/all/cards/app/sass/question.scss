@@ -22,19 +22,23 @@
 
 .accordion{
     // background-color: #F5F5F5;
-    max-width:800px;
+    max-width:1140px;
 }
 
-.accordion .contentBx
-{
+.accordion .contentBx{   
+    padding: 50px;
     position: relative;
     margin: 20px 20px;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+ 
 }
 
 .accordion .contentBx .label{
+    font-size: 32px;
     position: relative;
-    padding:10px;
-    background-color: #F5F5F5;
+
+    // background-color: #F5F5F5;
     color: #000;
     cursor: pointer;
 }
@@ -49,44 +53,72 @@
     line-height: 39px;
     text-align: center;
     color: #000000; 
-}
-
- .note__text{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 39px;
-    text-align: center;
-    color: #696969;
-
+    user-select: none;
+    padding-right: 45px;
 }
 
 .accordion .contentBx .label::before{
-    content: "+";
+    content: "";
     position: absolute;
+    height: 3px;
+    width: 30px;
+    border-radius: 10px;
+    background: #000;
+    right: 0px;
     top: 50%;
-    right: 20px;
+    transform: translateY(-50%) scaleY(1) rotate(90deg);
+    font-size: 1.5em;
+    transition: transform 0.3s;
+}
+.accordion .contentBx .label::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    border-radius: 10px;
+    background: #000;
+    right: 0px;
+    top: 50%;
     transform: translateY(-50%);
     font-size: 1.5em;
+    transition: transform 0.3s;
 }
 
 .accordion .contentBx.active .label::before{
-    content: " -";
+    transform: translateY(-50%) scaleY(0) rotate(90deg);
 }
 
 .accordion .contentBx .content{
     position: relative;
-    background: #fff;
+   
     height:0;
     overflow: hidden;
     transition: 0.5s;
     overflow-y: auto;
 
 }
+.accordion .contentBx .content{
+    overflow: hidden;
+}
 
 
-.accordion .contentBx.active .content{
-    height:150px;
-    padding: 10px;
+
+@media (max-width:700px) {
+    .accordion .contentBx{   
+        padding: 20px;
+    }
+    .question__slogan{
+            font-size: 40px;
+            line-height: 55px;
+            width: 100%;
+    }
+    .accordion .contentBx .label{
+            font-size: 25px;
+            line-height: 30px;
+            text-align: left;
+    }
+    .accordion .note__text{
+        text-align: left;
+    }
+    
 }
