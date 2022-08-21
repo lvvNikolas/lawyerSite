@@ -79,7 +79,8 @@
   border-radius: 25px;
   cursor: pointer;
   font-size: 20px;
-  font-weight: 600
+  font-weight: 600;
+  text-decoration: none
 }
 .header__link span {
   margin-right: 5px
