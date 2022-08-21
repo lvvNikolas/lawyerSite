@@ -38,6 +38,8 @@ function sendingCompleteHtml(state){
     let modal = document.querySelector('.main__form')
     modal.style.position = 'relative'
     let element = document.createElement('div')
+    element.classList.add('form--loading')
+
     if(state === "sending"){
         element.innerHTML = `
         <div class = "sending_body" style = "position:absolute; top:0; left:0; width:100%; height:100%; background:white; border-radius:32px;
@@ -47,20 +49,20 @@ function sendingCompleteHtml(state){
         `
         modal.appendChild(element)
     }else if(state === "send"){
-        element.innerHTML = `
+        console.log()
+        document.querySelector('.form--loading').innerHTML = `
         <div class = "sending_body" style = "position:absolute; top:0; left:0; width:100%; height:100%; background:white; border-radius:32px;
         display:flex; flex-direction:column; justify-content:center; align-items:center; transition: 0.5s">
             <h3 style = "color:#675CE9;">Заявка отправленна</h2>
             ${svg.send}
         </div>
         `
-        modal.appendChild(element)
         setTimeout(()=>{
-            element.querySelector('.sending_body').style.opacity = 0
+            document.querySelector('.sending_body').style.opacity = 0
         },1000)
     
         setTimeout(()=>{
-            modal.removeChild(element)
+            modal.removeChild(document.querySelector('.form--loading'))
         },2000)
     }
 }
@@ -73,13 +75,10 @@ form.addEventListener('submit', sendForm)
 
 async function sendForm(e){
     e.preventDefault()
-    // Validator
-    let error = validateErrors(form)
-   
+    let error = 0
     let formData = new FormData(form)
-        //Add loader here
         if(error === 0){
-            // sendingCompleteHtml("sending")
+            sendingCompleteHtml("sending")
             let response = await fetch('sendmail.php',{
                 method: 'POST',
                 body: formData
@@ -87,36 +86,14 @@ async function sendForm(e){
 
             if(response.ok){
                 let result = await response.json()
-                // console.log(result)
+                sendingCompleteHtml("send")
                 form.reset()
-                // form.classList.remove('nowSending')
-                // form.classList.add('sendingOk')
-                // setInterval(()=>{
-                //     form.classList.remove('sendingOk')
-                // },500)
-                // sendingCompleteHtml("send")
             }
         }else{
             console.log(error)
         }
 
 }
-
-// FORM VALIDATION -------------------------------
-function validateErrors(form){
-    let err = 0
-    let req = document.querySelectorAll('input')
-    req.forEach((e,i)=>{
-        const input = e
-        // formRemoveError(input)
-        if(input.value === ''){
-                // formAddError(input)
-                err++
-        }
-     })
-     return err;
-}
-
 
 
 
