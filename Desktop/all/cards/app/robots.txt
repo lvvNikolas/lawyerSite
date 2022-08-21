@@ -1,0 +1,3 @@
+User-agent: *
+Allow:/
+Sitemap: https://coding-path.ru/sitemap.xml
