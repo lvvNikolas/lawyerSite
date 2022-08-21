@@ -68,3 +68,14 @@ function validateErrors(form){
      })
      return err;
 }
+
+//Card scroll
+function cardScroll(){
+    const scroll = document.addEventListener('scroll',(e)=>{
+        const offset = document.querySelector('.main__header').getBoundingClientRect().top
+        const height = document.querySelector('.main__header').offsetHeight
+        const cardList = document.querySelector('.header__card-list')
+        cardList.style.transform = `translateX(${offset}px)`
+    })
+}
+cardScroll()

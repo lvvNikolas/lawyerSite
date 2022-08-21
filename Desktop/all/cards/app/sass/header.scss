@@ -81,11 +81,23 @@
 .header__link span{
     margin-right: 5px;
 }
-
+.header__card-list-container{
+    position: relative;
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+}
 .header__card-list{
+    height: 100%;
     display: flex;
     justify-content: space-around;
-
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: absolute;
+    transition: transform 0.01s;
+}
+.header__card{
+    width: 400px;
 }
 
 .header__img{
