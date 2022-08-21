@@ -31,7 +31,7 @@ async function sendForm(e){
     let formData = new FormData(form)
         //Add loader here
         if(error === 0){
-            sendingCompleteHtml("sending")
+            // sendingCompleteHtml("sending")
             let response = await fetch('sendmail.php',{
                 method: 'POST',
                 body: formData
@@ -46,7 +46,7 @@ async function sendForm(e){
                 // setInterval(()=>{
                 //     form.classList.remove('sendingOk')
                 // },500)
-                sendingCompleteHtml("send")
+                // sendingCompleteHtml("send")
             }
         }else{
             console.log(error)
