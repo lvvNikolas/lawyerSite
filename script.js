@@ -8,6 +8,8 @@ const practiceMoreBtn = document.querySelector('.practice__more-btn')
 const practiceColumns = practiceGrid.querySelectorAll('.practice__grid-column')
 const practiceGradient = practiceGrid.querySelector('.practice__grid-gradient')
 
+const loader = document.querySelector('.form__loader')
+
 //Init functions
 checkboxesHeight()
 checkBoxOpacity()
@@ -98,4 +100,42 @@ practiceMoreBtn.addEventListener('click',function(){
         practiceGradient.style.display = 'block'
     }
 })
+
+function staticPopup(text){
+
+}
+
+function dinamicPopup(text, time){
+
+}
+
+function renderPopup(text, time = 3000){
+    const popup = document.createElement('div')
+    popup.innerHTML = text
+    popup.classList.add("form__popup")
+    const body = document.querySelector('body')
+    body.appendChild(popup)
+    setTimeout(()=>{
+        popup.classList.add('--popup_show')
+    },10)
+    setTimeout(()=>{
+        popup.classList.remove('--popup_show')
+    },time) 
+    setTimeout(()=>{
+        popup.remove()
+    },time + 350) 
+}
+
+
+
+setTimeout(()=>{
+    loader.classList.add('form__loader--show')
+},1000)
+
+setTimeout(()=>{
+    loader.classList.remove('form__loader--show')
+    renderPopup("Ваша заявка принята, спасибо!")
+},2000)
+
+
 

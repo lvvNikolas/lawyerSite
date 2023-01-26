@@ -1,0 +1,24 @@
+.form__popup {
+    padding: 40px 30px;
+    background: var(--accent_color);
+    border-radius: 2px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.303);
+    color: #fff;
+    font-weight: 600;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, calc(-100% - 40px));
+    transition: transform 0.3s;
+    z-index: 1000;
+}
+.--popup_show{
+    transform: translate(-50%, 0);
+}
