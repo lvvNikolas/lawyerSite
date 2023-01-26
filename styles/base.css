@@ -32,6 +32,11 @@ body{
     font-size: 600;
     margin-bottom: 15px;
 }
+.small-title{
+    font-size: 30px;
+    font-size: 600;
+    margin-bottom: 15px;
+}
 .text{
     font-size: 20px;
 }
@@ -55,5 +60,16 @@ body{
     }
     .sub-title{
         font-size: 30px;
+    }
+    .small-title{
+        font-size: 25px;
+    }
+}
+@media (max-width:310px){
+    .title{
+        font-size: 30px;
+    }
+    .sub-title{
+        font-size: 25px;
     }
 }

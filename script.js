@@ -1,41 +1,101 @@
 //Nodes
 const descCard = document.querySelectorAll('.service-order__item')
 const checkboxesGroup = document.querySelectorAll('.service-order__checboxes-group')
-const checkBoxes = document.querySelectorAll('.service-order__checkbox') 
+const checkBoxes = document.querySelectorAll('.service-order__checkbox')
+//Переменные для страницы с практикой
+const practiceGrid = document.querySelector('.practice__grid')
+const practiceMoreBtn = document.querySelector('.practice__more-btn')
+const practiceColumns = practiceGrid.querySelectorAll('.practice__grid-column')
+const practiceGradient = practiceGrid.querySelector('.practice__grid-gradient')
 
 //Init functions
 checkboxesHeight()
 checkBoxOpacity()
+textSpitter()
+practiceMobileHandler()
 checkBoxes.forEach(e => e.addEventListener('click', checkBoxOpacity))
 
-window.addEventListener('resize', (e)=>{
+window.addEventListener('resize', (e) => {
     checkboxesHeight()
+    textSpitter()
+    practiceMobileHandler()
 })
+
 // Изменяет прозначность текста при активации чекбокса на секции порядок оказания услуг
-function checkBoxOpacity(){
+function checkBoxOpacity() {
     const inputs = document.querySelectorAll('.service-order__checkbox input')
     let activeId
-    inputs.forEach((e,i)=>{
-         if(e.checked){
-             activeId = i
-         }
+    inputs.forEach((e, i) => {
+        if (e.checked) {
+            activeId = i
+        }
     })
-    descCard.forEach((e,j)=>{
-       e.style.opacity = 0.5
-       if(j === activeId){
-         e.style.opacity = 1
-       }
+    descCard.forEach((e, j) => {
+        e.style.opacity = 0.5
+        if (j === activeId) {
+            e.style.opacity = 1
+        }
     })
- }
+}
 
 // Адаптирует высоту чекбокса под высоту текста, 
 //чтобы квадраты и линии были такой же высоты, как и текстовые блоки
- function checkboxesHeight(){
+function checkboxesHeight() {
     const heights = []
 
-    descCard.forEach((e) => {heights.push(e.offsetHeight)})
+    descCard.forEach((e) => { heights.push(e.offsetHeight) })
 
-    checkboxesGroup.forEach((e,i)=>{   
+    checkboxesGroup.forEach((e, i) => {
         e.style.height = `${heights[i]}px`
     })
 }
+
+//Функция для переноса текста в карточках, когда не хватает места тексту
+function textSpitter() {
+    const containers = document.querySelectorAll('.practice__grid-title')
+    containers.forEach((e, i) => {
+        const wrapper = e.querySelector('.grid-title__wrapper')   
+        const splitters = e.querySelectorAll('.splitter')
+        splitters.forEach((item, j) => {
+            item.innerHTML = ''
+        })
+        if (wrapper.offsetWidth > e.offsetWidth) {
+            splitters.forEach((item, j) => {
+                item.innerHTML = '-<br>'
+            })
+        }
+    })
+}
+
+//Функция для изменения высоты страницы "Практика", чтобы на мобильных телефонах"
+// скрыть часть карточек
+function practiceMobileHandler(){
+    if(window.innerWidth < 768){
+        const smallHeight = practiceColumns[0].offsetHeight
+        practiceGrid.style.height = `${smallHeight+70}px` 
+        practiceGradient.style.display = 'block'       
+    }else{
+        practiceGrid.style.height = `auto`
+        practiceGradient.style.display = 'none'  
+    }
+}
+
+//При нажатии на кнопку развернуть или свернуть окно с карточками на "Практике"
+practiceMoreBtn.addEventListener('click',function(){
+    this.classList.toggle('-btn--active')
+    const text = this.querySelector('.practice__more-btn-text')
+    if(this.classList.contains('-btn--active')){
+        const arr = []
+        practiceColumns.forEach(e => arr.push(e.offsetHeight))
+        const fullHeight = arr.reduce((p,c)=>p+c)
+        practiceGrid.style.height = `${fullHeight + 70}px` 
+        text.innerHTML = "Меньше кейсов"
+        practiceGradient.style.display = 'none'
+    }else{
+        const smallHeight = practiceColumns[0].offsetHeight
+        practiceGrid.style.height = `${smallHeight + 70}px` 
+        text.innerHTML = "Больше кейсов"
+        practiceGradient.style.display = 'block'
+    }
+})
+
