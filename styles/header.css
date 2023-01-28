@@ -1,0 +1,132 @@
+.header{
+    max-width: 1920px;
+    height: 97vh;
+    background-image: url("../img/mainBg.jpg");
+    /* margin: 0 !important;
+    padding: 0 !important; */
+}
+
+.blur{
+    background: rgba(248, 249, 251, 0.02);
+    backdrop-filter: blur(5px);
+}
+
+.nav{
+    display: flex;
+    justify-content:space-between;
+    color: var( --bg_color);
+  
+}
+
+.nav__slogan{
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.nav__ul{
+    display: flex;
+    justify-content:space-between;
+    list-style: none;
+}
+
+.nav__li{
+    margin-left: 15px;
+}
+
+.nav__link{
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+
+.social__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social{
+    margin-left: 22px;
+}
+
+.social__link{
+    text-decoration: none;
+}
+
+.header__wrapper{
+    max-width: 1200px;
+    /* width: 100%; */
+    margin: 0 auto;
+    padding-top: 30px;
+    /* text-align: left; */
+}
+
+.header__h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 97px;
+    color: #FFFFFF;
+}
+
+
+.header__icon--wrapper{
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 53px;
+}
+
+.header__item{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.check{
+    margin-right: 125px !important;
+}
+
+
+
+
+.header__icon--p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-left: 20px;
+
+}
+
+
+.header__button{
+    text-align: center;
+    margin-top: 70px;
+    border: none;
+    width: 333px;
+    height: 90px;
+    left: 0px;
+    top: 556px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0 auto;
+}
+
+.header__button--img{
+    width: 80%;
+    height: 40%;
+}

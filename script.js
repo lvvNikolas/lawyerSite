@@ -101,6 +101,13 @@ practiceMoreBtn.addEventListener('click',function(){
     }
 })
 
+function staticPopup(text){
+
+}
+
+function dinamicPopup(text, time){
+
+}
 
 function renderPopup(text, time = 3000){
     const popup = document.createElement('div')
@@ -119,19 +126,16 @@ function renderPopup(text, time = 3000){
     },time + 350) 
 }
 
-function clearForm(form){
-    form.name.value = ''
-    form.phone.value = ''
-    form.comm.value = ''
-}
 
 
-// const sendMessageTg = async() =>{
-//     let formData = new FormData(document.querySelector('#form'))
-//     let resp = await fetch('telegram.php')
-//     console.log(resp)
-// }
-// document.querySelector('#form').addEventListener('submit',(e)=>{
-//     e.preventDefault()
-//     sendMessageTg()
-// })
+setTimeout(()=>{
+    loader.classList.add('form__loader--show')
+},1000)
+
+setTimeout(()=>{
+    loader.classList.remove('form__loader--show')
+    renderPopup("Ваша заявка принята, спасибо!")
+},2000)
+
+
+

@@ -11,8 +11,10 @@
     --font_color:#434C6D;
     --font_light_color:#8891B1;
 }
-body{
+.main{
     padding: 0 20px;
+}
+body{
     background: var(--bg_color);
 }
 .container{
