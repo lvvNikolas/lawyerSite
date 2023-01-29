@@ -9,7 +9,6 @@
     margin: 7.5px;
     text-align: center;
     padding: 20px;
-
 }
 
 .labor__p{
@@ -32,13 +31,12 @@
 
 }
 
-
-
 @media (max-width:880px) {
-    .about__title{
-        text-align: center;
-    }
     .labor__wrapper{
         flex-direction: column;
+    }
+    .labor__item{
+        margin-left: 0;
+        margin-right: 0;
     }
 }

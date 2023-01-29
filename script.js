@@ -7,6 +7,9 @@ const practiceGrid = document.querySelector('.practice__grid')
 const practiceMoreBtn = document.querySelector('.practice__more-btn')
 const practiceColumns = practiceGrid.querySelectorAll('.practice__grid-column')
 const practiceGradient = practiceGrid.querySelector('.practice__grid-gradient')
+const burgerInput = document.querySelector('.burger__input')
+const burgerMenuContainer = document.querySelector('.nav__mobile-menu')
+
 
 const loader = document.querySelector('.form__loader')
 
@@ -101,14 +104,6 @@ practiceMoreBtn.addEventListener('click',function(){
     }
 })
 
-function staticPopup(text){
-
-}
-
-function dinamicPopup(text, time){
-
-}
-
 function renderPopup(text, time = 3000){
     const popup = document.createElement('div')
     popup.innerHTML = text
@@ -126,16 +121,22 @@ function renderPopup(text, time = 3000){
     },time + 350) 
 }
 
+// setTimeout(()=>{
+//     loader.classList.add('form__loader--show')
+// },1000)
 
+// setTimeout(()=>{
+//     loader.classList.remove('form__loader--show')
+//     renderPopup("Ваша заявка принята, спасибо!")
+// },2000)
 
-setTimeout(()=>{
-    loader.classList.add('form__loader--show')
-},1000)
-
-setTimeout(()=>{
-    loader.classList.remove('form__loader--show')
-    renderPopup("Ваша заявка принята, спасибо!")
-},2000)
-
+burgerInput.addEventListener('input', (e)=>{
+    if(e.target.checked){
+        burgerMenuContainer.classList.add('nav__mobile-menu--show')
+    }
+    if(!e.target.checked){
+        burgerMenuContainer.classList.remove('nav__mobile-menu--show')
+    }
+})
 
 
