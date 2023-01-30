@@ -1,0 +1,56 @@
+.about__wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+.about__item{
+    margin-right: 37px;
+}
+
+.about__h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    color: #434C6D;
+
+}
+
+
+.about__p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #8891B1;
+
+}
+
+@media (max-width:800px) {
+    .about__wrapper{
+        flex-direction: column;
+    }
+
+    .about__item{
+        margin-right: 0px;
+        
+    }
+    .about__img{
+        display: block;
+        /* width: 70%; */
+        margin: 0 auto 30px auto;
+    }
+}
+
+
+@media (max-width:530px) {
+    .about__img{
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+        object-position: top;
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,112 @@
+.service-order {
+}
+.service-order__body {
+}
+.service-order__title {
+}
+.service-order__content {
+    position: relative;
+}
+.service-order__description {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+.service-order__item {
+    align-self: flex-start;
+    width: calc(50% - 80px);
+    text-align: right;
+    transition: opacity 0.1s;
+}
+.service-order__item:nth-of-type(2){
+    align-self: flex-end;
+    text-align: left;
+}
+.service-order__item-title {
+    margin-bottom: 15px;
+    color: var(--font_color);
+}
+.service-order__item-text {
+    color: var(--font_light_color);
+}
+
+.service-order__checkboxses {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    padding: 0 30px;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.service-order__checboxes-group{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.service-order__checkbox {
+    border-radius: 2px;
+    height: 100px;
+    position: relative;
+    border: 1px solid var(--font_color);
+}
+.service-order__checkbox input{
+    position: absolute;
+    opacity: 0;
+}
+.service-order__checkbox-line {
+    align-self: center;
+    flex-grow: 1;
+    width: 1px;
+    background: var(--font_color);
+}
+.service-order__checkbox span{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color:var(--font_color);
+    font-size: 40px;
+    transition: background 0.1s, color 0.1s;
+}
+.service-order__checkbox input:checked ~ span{
+    background: var(--accent_color);
+    color:#fff
+}
+
+@media (max-width:769px) {
+    .service-order__checkboxses {
+        position: absolute;
+        left: 0;
+        padding:0 30px 0 0;
+        transform: translateX(0);
+    }
+    .service-order__item {
+        align-self: flex-end;
+        width: calc(100% - 130px);
+        text-align: left;
+        transition: opacity 0.1s;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width:426px) {
+    .service-order__checkboxses {
+        padding:0 15px 0 0;
+    }
+    .service-order__checboxes-group{
+        width: 50px;
+    }
+    .service-order__checkbox{
+       height: 50px;
+    }
+    .service-order__checkbox span{
+        font-size: 20px;
+    }
+    .service-order__item {
+        width: calc(100% - 65px);
+    }
+}

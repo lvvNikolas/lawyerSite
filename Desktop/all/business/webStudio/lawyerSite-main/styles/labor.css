@@ -1,0 +1,42 @@
+
+.labor__wrapper{
+    display: flex;
+}
+
+.labor__item{
+    background-color: white;
+    justify-content: space-between;
+    margin: 7.5px;
+    text-align: center;
+    padding: 20px;
+}
+
+.labor__p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #8891B1;
+}
+
+.labor__h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: #434C6D;
+
+}
+
+@media (max-width:880px) {
+    .labor__wrapper{
+        flex-direction: column;
+    }
+    .labor__item{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

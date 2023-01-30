@@ -1,0 +1,128 @@
+.practice {
+   
+}
+.practice__body {
+}
+.practice__title {
+}
+.practice__grid {
+    display: flex;
+    justify-content: space-between;
+}
+.practice__grid-column{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 33%;
+}
+.practice__grid-column:nth-of-type(2){
+    margin: 0 15px;
+}
+.practice__grid-item {
+    padding: 30px;
+    margin-bottom: 15px;
+}
+
+.practice__grid-title {
+    width: 100%;
+    color:var(--font_color);
+}
+.practice__grid-text{
+    overflow-wrap: break-word;
+}
+.grid-item-white {
+    background: white;
+}
+.grid-item-white .practice__grid-text {
+    color:var(--font_light_color);
+}
+.grid-item-dark {
+    color: #fff;
+    background: #4A5368;
+}
+.grid-item-dark .practice__grid-title{
+    color: #fff;
+}
+.grid-item-cream {
+    color: #fff;
+    background: #AFA8A1;
+}
+.grid-item-cream .practice__grid-title{
+    color: #fff;
+}
+.practice__more {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.practice__more-btn {
+    display: none;
+    border-radius: 2px;
+    max-width: 400px;
+    width: 100%;
+    border: none;
+    background: var(--accent_color);
+    padding: 25px 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+.practice__more-btn span:nth-of-type(1){
+    margin-right: 20px;
+}
+
+.practice__more-dots {
+    color: var(--font_color);
+}
+.practice__grid-gradient{
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(0deg, #F8F9FB 43.57%, rgba(255, 255, 255, 0) 100%);
+    display: none;
+}
+
+@media (max-width:1000px){
+    .practice__grid{
+        flex-direction: column;
+    }
+    .practice__grid-column{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .practice__grid-column:nth-of-type(2){
+        margin: 0;
+    }
+    .practice__grid-item{
+        width: calc(50% - 7.5px);
+    }
+}
+@media (max-width:768px){
+    .practice__grid{
+        overflow: hidden;
+        transition: height 0.9s ease;
+        position: relative;
+    }
+    .practice__grid-gradient{
+        display: block;
+    }
+    .practice__grid-column{
+        flex-direction: column;
+        width: 100%;
+    }
+    .practice__grid-item{
+        width: 100%;
+    }
+    .practice__more-dots {
+        display: none;
+    }
+    .practice__more-btn {
+        display: flex;
+    }
+}
