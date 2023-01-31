@@ -121,15 +121,6 @@ function renderPopup(text, time = 3000){
     },time + 350) 
 }
 
-// setTimeout(()=>{
-//     loader.classList.add('form__loader--show')
-// },1000)
-
-// setTimeout(()=>{
-//     loader.classList.remove('form__loader--show')
-//     renderPopup("Ваша заявка принята, спасибо!")
-// },2000)
-
 burgerInput.addEventListener('input', (e)=>{
     if(e.target.checked){
         burgerMenuContainer.classList.add('nav__mobile-menu--show')
@@ -138,5 +129,51 @@ burgerInput.addEventListener('input', (e)=>{
         burgerMenuContainer.classList.remove('nav__mobile-menu--show')
     }
 })
+
+// Работа с формой
+const form = document.getElementById('form')
+form.addEventListener('submit', sendForm)
+
+async function sendForm(e){
+    console.log("form")
+    e.preventDefault()
+    // Validator
+    let error = validateErrors(form)
+    let formData = new FormData(form)
+    loader.classList.add('form__loader--show')
+        if(error === 0){
+            let response = await fetch('sendmail.php',{
+                method: 'POST',
+                body: formData
+            })
+            //Тест для отправки в телеграм (не уверен что работает)
+            fetch('telegram.php')
+            if(response.ok){
+                let result = await response.json()
+                form.reset()
+                renderPopup("Ваша заявка принята, спасибо!")
+                loader.classList.remove('form__loader--show')
+            }
+        }else{
+            console.log(error)
+            renderPopup("Ошибка при отправке!")
+            loader.classList.remove('form__loader--show')
+        }
+}
+
+// FORM VALIDATION -------------------------------
+function validateErrors(form){
+    let err = 0
+    let req = document.querySelectorAll('.form__content-input')
+    req.forEach((e,i)=>{
+        const input = e
+        // formRemoveError(input)
+        if(input.value === ''){
+                // formAddError(input)
+                err++
+        }
+     })
+     return err;
+}
 
 
