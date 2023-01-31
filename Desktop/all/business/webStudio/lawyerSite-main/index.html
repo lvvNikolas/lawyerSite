@@ -490,25 +490,33 @@
 
         <section class="form container">
             <div class="form__body">
-                <h2 class="form__title title" id="form">Свяжитесь с нами</h2>
+                <h2 class="form__title title">Свяжитесь с нами</h2>
                 <h3 class="form__sub-title sub-title">Мы ответим вам, как можно скорее</h3>
-                <form action="#" class="form__content">
+                <form action="" class="form__content" id="form">
                     <label for="input__phone">
                         <span class="small-title">Номер телефона*</span>
-                        <input type="tel" placeholder="+79299212112" id="input__phone" class="form__content-input"
+                        <input type="tel" name="phone"
+                         placeholder="+79299212112" id="input__phone" class="form__content-input"
                             required>
+                    </label>
+                    <label for="input__email">
+                        <span class="small-title">Электронная почта</span>
+                        <input type="email" name="email"
+                         placeholder="some@gmail.com" id="input__email" class="form__content-input" required>
                     </label>
                     <label for="input__name">
                         <span class="small-title">Имя</span>
-                        <input type="text" placeholder="Иван Ровный" id="input__name" class="form__content-input">
+                        <input type="text" name="name"
+                         placeholder="Иван Ровный" id="input__name" class="form__content-input" required>
                     </label>
                     <label for="input__сomm">
                         <span class="small-title">О проблеме</span>
-                        <textarea rows="7" placeholder="Ваш комментарий..." id="input__сomm"
-                            class="form__content-input"></textarea>
+                        <textarea rows="7" name="message-text"
+                         placeholder="Ваш комментарий..." id="input__сomm"
+                            class="form__content-input" required></textarea>
                     </label>
 
-                    <button class="form__submit btn">
+                    <button type = "submit" class="form__submit btn">
                         <span>Отправить</span>
                         <img src="img/icons/submit-icon.svg" alt="journal icon">
                     </button>
