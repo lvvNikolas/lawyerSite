@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 :root{
     --bg_color:#F8F9FB;
     --accent_color:#474679;
